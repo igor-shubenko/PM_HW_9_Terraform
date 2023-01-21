@@ -24,7 +24,7 @@ variable "delete_after" {
 variable "tags" {
   description = "Default tag for AWS provider"
   type        = map(string)
-  default = {
+  default     = {
     "Project"   = "terraform_homework"
     "Team"      = "DataEngineering_4.0"
     "Terraform" = "true"

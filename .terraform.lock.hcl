@@ -3,7 +3,7 @@
 
 provider "registry.terraform.io/hashicorp/aws" {
   version = "4.50.0"
-  hashes = [
+  hashes  = [
     "h1:rLtHJP4kPpapX3Nq3u5bWudzO8kHKAkTLFBy6slbh00=",
     "zh:03a5795ea9ed3eb80e0d5e0c5234dc76455aa4437e5546399127939c24a60973",
     "zh:24556a15eb4a69955857b3a52322f099e68031e6f9a3df2cfdb6f6351cc4885e",
@@ -26,7 +26,7 @@ provider "registry.terraform.io/hashicorp/aws" {
 provider "registry.terraform.io/hashicorp/random" {
   version     = "3.4.3"
   constraints = "3.4.3"
-  hashes = [
+  hashes      = [
     "h1:xZGZf18JjMS06pFa4NErzANI98qi59SEcBsOcS2P2yQ=",
     "zh:41c53ba47085d8261590990f8633c8906696fa0a3c4b384ff6a7ecbf84339752",
     "zh:59d98081c4475f2ad77d881c4412c5129c56214892f490adf11c7e7a5a47de9b",
@@ -46,7 +46,7 @@ provider "registry.terraform.io/hashicorp/random" {
 provider "registry.terraform.io/mongey/kafka" {
   version     = "0.5.2"
   constraints = "0.5.2"
-  hashes = [
+  hashes      = [
     "h1:ZhnY0bMKNsLpxrsYuIteyh6EMOlgsq9U6wK8h6jRUpA=",
     "zh:27358d118ce6c1c61521a0af2aa569f51e05e018c7178b8a2c6b4149cfea1a1d",
     "zh:3d1f56e1ad924079c966169d58160b54c1f190017021b1788f1398675f430652",
