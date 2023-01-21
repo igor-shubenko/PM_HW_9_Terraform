@@ -8,5 +8,17 @@ terraform {
       source  = "hashicorp/aws"
       version = "4.50.0"
     }
+
+    kafka = {
+      source  = "Mongey/kafka"
+      version = "0.5.2"
+    }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "3.4.3"
+    }
+
   }
+
 }

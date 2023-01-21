@@ -25,9 +25,20 @@ variable "tags" {
   description = "Default tag for AWS provider"
   type        = map(string)
   default = {
-    "Project"   = "terraform_practice"
-    "Team"      = "DE"
+    "Project"   = "terraform_homework"
+    "Team"      = "DataEngineering_4.0"
     "Terraform" = "true"
-    "Owner"     = "Igor"
+    "Owner"     = "Igor Shubenko"
   }
+}
+
+variable "topics_amount" {
+  description = "Amount of topics that will be created"
+  type        = number
+  default     = 0
+}
+
+variable "bootstrap_servers" {
+  description = "URL's to initial servers you connect to when establishing connection to Kafka."
+  type        = string
 }

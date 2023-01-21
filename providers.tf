@@ -9,3 +9,13 @@ provider "aws" {
     })
   }
 }
+
+provider "kafka" {
+  bootstrap_servers = [var.bootstrap_servers]
+  ca_cert           = ""
+  client_cert       = ""
+  client_key        = ""
+  tls_enabled       = false
+}
+
+provider "random" {}
