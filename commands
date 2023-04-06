@@ -1,0 +1,29 @@
+ terraform init -reconfigure -backend-config env/s3_backend.conf
+
+ terraform plan -var-file env/dev.tfvars -lock=false
+
+ terraform state list
+
+ #Importing handmade aws resources to remote state
+
+ terraform import -lock=false -var-file env/dev.tfvars aws_dynamodb_table.this Terraform_Lock_table
+
+ terraform import -lock=false -var-file env/dev.tfvars  'module.s3_bucket.aws_s3_bucket.this[0]' terraformas
+
+ terraform import -lock=false -var-file env/dev.tfvars  'module.s3_bucket.aws_s3_bucket_public_access_block.this[0]' terraformas
+
+ terraform import -lock=false -var-file env/dev.tfvars  'module.s3_bucket.aws_s3_bucket_versioning.this[0]' terraformas
+
+ terraform apply -var-file env/dev.tfvars
+
+
+-------------- kafka -----------
+
+terraform import -var-file env/dev.tfvars 'kafka_topic.events_taxonomy' events.taxonomy
+
+
+------------- debug ------------
+
+export TF_LOG="DEBUG"
+
+unset TF_LOG
